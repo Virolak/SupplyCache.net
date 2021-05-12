@@ -1,0 +1,26 @@
+{
+  "name": "supply_cache",
+  "version": "1.0.0",
+  "description": "Platform for updating consumables in inventory and generating shopping lists",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "supply",
+    "cache",
+    "inventory",
+    "consumables",
+    "shopping",
+    "list",
+    "lists",
+    "organize",
+    "organizer"
+  ],
+  "author": "Clement Hill",
+  "license": "ISC"
+}
