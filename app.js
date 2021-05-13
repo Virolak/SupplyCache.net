@@ -11,7 +11,7 @@ const app = express();
 
 // Render home page
 app.get("/", function(request, response) {
-    response.send("This is the homepage")
+    response.send("Welcome to the Suppy Cache");
 });
 
 // Listen on port 8080
