@@ -9,9 +9,12 @@ const express = require("express");
 // Initialize express
 const app = express();
 
+// Point to public directory
+app.use(express.static(__dirname + "/public"));
+
 // Render home page
 app.get("/", function(request, response) {
-    response.send("Welcome to the Suppy Cache");
+    response.render("index.ejs")
 });
 
 // Define port
