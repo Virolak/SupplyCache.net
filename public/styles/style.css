@@ -3,18 +3,19 @@
     margin:0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight:200;
-    color:#007676;
+    box-sizing: border-box;
 }
 
-main {
-    padding-top:5rem;
+body {
+    color:#007676;
+    text-align:justify;
 }
 
 #banner {
     color:#ffffff;
     background-color:#FFB92C;
     height:4rem;
-    box-shadow:0 4px #00000033;
+    box-shadow:0 4px #000000aa;
 }
 
 #banner h1 {
@@ -23,10 +24,102 @@ main {
     line-height:4rem;
     vertical-align:middle;
     font-size:2rem;
+    float:left;
+}
+
+#overview {
+    z-index:-4;
+    padding:4rem 0;
+    background-image:url("/images/library.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    width:100%;
+    float:left;
+}
+
+#summary {
+    width:48%;
+    float:left;
+}
+
+#summary h2 {
+    text-decoration:underline;
+}
+
+#summary p{
+    margin-top:1rem;
 }
 
 .contain {
-    padding: 0 1rem 0 1rem;
+    padding: 0 2rem;
     max-width:80rem;
     margin:auto;
+}
+
+.button {
+    display:block;
+    text-align:center;
+    float:left;
+    border:2px solid #007676;
+    border-radius:2rem;
+    padding:1rem;
+    width:45%;
+    margin-top:2rem;
+}
+
+.active {
+    color:#ffffff;
+    background-color:#007676;
+    box-shadow:0 4px #00000033;
+}
+
+.right {
+    float:right;
+}
+
+#features {
+    float:left;
+    width:100%;
+    margin-top:3rem;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#features .card {
+    width:25%;
+    min-width:15rem;
+    background-color:#FFB92C;
+    float:left;
+    margin-top:1rem;
+    margin-right:12%;
+    padding:1rem;
+    color:#ffffff;
+    box-shadow:8px 8px #00000033;
+}
+
+#features .card:nth-child(3n) {
+    margin-right:0;
+    float:right;
+}
+
+#features .card h3 {
+    color: #ffffff;
+}
+
+.card ul {
+    padding:1rem 3rem;
+    text-align:left;
+}
+
+.card ul li {
+    margin-bottom:1rem;
+}
+
+@media screen and (max-width: 720px) {
+
+    #summary {
+        width:100%;
+    }
+
 }
