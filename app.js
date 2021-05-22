@@ -17,6 +17,10 @@ app.get("/", function(request, response) {
     response.render("index.ejs")
 });
 
+app.get("/login", function(request, response) {
+    response.render("login.ejs")
+});
+
 // Define port
 var port = process.env.PORT || 8080
 
