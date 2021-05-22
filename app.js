@@ -14,11 +14,15 @@ app.use(express.static(__dirname + "/public"));
 
 // Render home page
 app.get("/", function(request, response) {
-    response.render("index.ejs")
+    response.render("index.ejs");
 });
 
 app.get("/login", function(request, response) {
-    response.render("login.ejs")
+    response.render("login.ejs");
+});
+
+app.get("/signup", function(request, repsonse) {
+    repsonse.render("signup.ejs");
 });
 
 // Define port

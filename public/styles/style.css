@@ -173,6 +173,18 @@ main {
     box-shadow:0 4px #00000033;
 }
 
+#userFields .group {
+    display:flex;
+}
+
+#userFields .group input {
+    margin-right:2rem;
+}
+
+#userFields .group input:last-of-type {
+    margin-right:0;
+}
+
 .sc_submit {
     background-image:none;
     background-color:#007676;

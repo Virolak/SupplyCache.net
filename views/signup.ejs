@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%-include("partials/metdata.ejs") %>
+    </head>
+    <body>
+        <%-include("partials/ribbon.ejs") %>
+
+        <main>
+            <div class="contain">
+                <form id="userFields">
+                    <h1>Sign up</h1>
+
+                    <div class="group">
+                        <input class="name" type="text" name="firstname" placeholder="First Name" autocomplete="given-name">
+                        <input class="name" type="text" name="lastname" placeholder="Last Name" autocomplete="family-name">
+                    </div>
+                    <input type="email" name="email" placeholder="Email Address" autocomplete="email">
+                    <input type="email" name="confirm_email" placeholder="Confirm Email" autocomplete="email">
+                    <input type="password" name="password" placeholder="Password" pattern=".{8,}">
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" pattern=".{8,}">
+                    <button class="sc_submit" type="submit">Submit</button>
+                    <p class="login_redirect">Already have an account? <a href="/login">Sign in</a></p>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
