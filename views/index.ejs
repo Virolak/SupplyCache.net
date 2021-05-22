@@ -1,18 +1,11 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-
-        <title>SupplyCache.net</title>
-
-        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <%-include("./partials/metdata.ejs")%>
     </head>
     <body>
 
-        <div id="banner">
-            <div class="contain">
-                <h1>SupplyCache.net</h1>
-            </div>
-        </div>
+        <%-include("./partials/ribbon.ejs")%>
 
         <main>
         <section id="overview">
@@ -24,8 +17,8 @@
                         to maintain your business supply or keep track of consumables in your pantry, SupplyCache.net should be your go-to inventory management
                         system
                     </p>
-                    <a class="button active">Get started</a>
-                    <a class="button right">Sign in</a>
+                    <a class="button active" href="/signup">Get started</a>
+                    <a class="button" href="/login">existing user</a>
                 </div>
             </div>
         </section>

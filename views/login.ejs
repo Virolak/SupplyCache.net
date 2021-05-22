@@ -1,0 +1,25 @@
+<!-- ############################## -->
+<!-- >>>>>>>>| login.ejs |<<<<<<<<< -->
+<!-- ############################## -->
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <%-include("./partials/metdata.ejs")%>
+    </head>
+    <body>
+        <%-include("./partials/ribbon.ejs")%>
+
+        <main class="center">
+            <div class="contain center">
+                <form id="userFields">
+                    <h1>Login</h1>
+                    <input class="sc_login" type="email" autocomplete="email" placeholder="email">
+                    <input class="sc_login" type="password" autocomplete="off" placeholder="password">
+                    <button class="sc_submit" type="submit">Submit</button>
+                    <p class="login_redirect">Don't have an account? <a href="/signup">Sign up</a></p>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
